@@ -1,0 +1,144 @@
+/* Reset some default browser styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero {
+    text-align: center;
+    color: #fff;
+    position: relative; /* Add position relative to contain absolute positioned images */
+    overflow: hidden; /* Hide overflow for the hero section */
+    height: 550px; /* Set the desired height for the hero section */
+}
+
+/* Uncomment the background-image property to set a background image */
+.hero {
+    /*background-image: url('event1.jpg');*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.slideshow-container {
+    position: absolute; /* Position the slideshow container absolutely */
+    top: 0;
+    left: 0;
+    width: 100%; /* Set the width to 100% to cover the entire hero section */
+    height: 100%; /* Set the height to 100% to cover the entire hero section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1; /* Set a negative z-index to place it behind the text content */
+}
+
+/* Remove the padding property to avoid excessive space */
+/* padding: 550px 0; */
+
+
+.mySlides {
+    display: none;
+    animation-name: slideFromRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes slideFromRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.slide-image {
+    width: 100%; /* Set the desired width */
+    height: 550px; /* Set the desired height */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+}
+
+
+.mySlides:first-child {
+    display: block;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.chair-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.chair {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    text-align: center;
+}
+
+.chair img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.price {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.contact {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

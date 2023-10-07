@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chair Rental Company</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Chair Rental Company</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chairs</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <section class="hero-text">
+            <h2>Welcome to our Chair Rental Services</h2>
+            <p>Find the perfect chairs for your event or occasion.</p>
+            <a href="#" class="btn">View Chairs</a>
+        </section>
+
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="event1.jpg" alt="event one" class="slide-image">
+            </div>
+            <div class="mySlides fade">
+                <img src="event2.jpg" alt="event two" class="slide-image">
+            </div>
+            <div class="mySlides fade">
+                <img src="event3.jpg" alt="event three" class="slide-image">
+            </div>
+            <div class="mySlides fade">
+                <img src="event4.jpg" alt="event four" class="slide-image">
+            </div>
+            <div class="mySlides fade">
+                <img src="event5.jpg" alt="event five" class="slide-image">
+            </div>
+        </div>
+    </section>
+    
+    <section class="chair-list">
+        <h2>Our Chairs</h2>
+        <div class="chair">
+            <img src="chair1.jpg" alt="Chair 1">
+            <h3>Chair Model 1</h3>
+            <p>Comfortable and stylish chair for all occasions.</p>
+            <span class="price">$20/day</span>
+        </div>
+        <div class="chair">
+            <img src="chair2.jpg" alt="Chair 2">
+            <h3>Chair Model 2</h3>
+            <p>Elegant and modern chair for weddings and events.</p>
+            <span class="price">$25/day</span>
+        </div>
+        <!-- Add more chair listings here -->
+    </section>
+    
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or want to book chairs, feel free to contact us.</p>
+        <a href="mailto:info@chairrentalcompany.com" class="btn">Email Us</a>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Chair Rental Company</p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+    
+        function showSlides() {
+            const slides = document.querySelectorAll('.mySlides');
+
+            // hides all slides
+            for (let i = 0; i < slides.length; i++){
+                slides[i].style.display = 'none';
+            }
+
+            // increment the slide index and wrap it around if needed
+            slideIndex++;
+            if(slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+
+            // Display the current slide
+            slides[slideIndex - 1].style.display = 'block';
+
+            // Change slide every 3 seconds (3000 milliseconds)
+            setTimeout(showSlides, 3000);
+        }
+    </script>
+</body>
+</html>
