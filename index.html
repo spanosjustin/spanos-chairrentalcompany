@@ -51,13 +51,13 @@
             <img src="chair1.jpg" alt="Chair 1">
             <h3>Chair Model 1</h3>
             <p>Comfortable and stylish chair for all occasions.</p>
-            <span class="price">$20/day</span>
+            <span class="price">$2/chair</span>
         </div>
         <div class="chair">
             <img src="chair2.jpg" alt="Chair 2">
             <h3>Chair Model 2</h3>
             <p>Elegant and modern chair for weddings and events.</p>
-            <span class="price">$25/day</span>
+            <span class="price">$4/chair</span>
         </div>
         <!-- Add more chair listings here -->
     </section>
@@ -81,7 +81,7 @@
 
             // hides all slides
             for (let i = 0; i < slides.length; i++){
-                slides[i].style.display = 'none';
+                slides[i].classList.remove('dae-in');
             }
 
             // increment the slide index and wrap it around if needed
@@ -91,10 +91,10 @@
             }
 
             // Display the current slide
-            slides[slideIndex - 1].style.display = 'block';
+            slides[slideIndex - 1].classList.add('fade-in');
 
             // Change slide every 3 seconds (3000 milliseconds)
-            setTimeout(showSlides, 3000);
+            setTimeout(showSlides, 500);
         }
     </script>
 </body>
