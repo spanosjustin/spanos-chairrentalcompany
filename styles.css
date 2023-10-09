@@ -135,6 +135,11 @@ nav ul li a {
     transition: transform 0.3s ease;
 }
 
+.chair a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .chair:hover { 
     transform: scale(1.02);
 }
@@ -143,6 +148,7 @@ nav ul li a {
     max-width: 100%;
     border-radius: 5px;
     object-fit: cover;
+    text-decoration: none;
 }
 
 .price {
@@ -188,17 +194,26 @@ footer {
     transform: scale(1.02);
 }
 
-.description {
+.product-rundown {
     background-color: #6f6f6f;
 }
 
+.product-title {
+    padding: 25px 5px;
+    font-size: 25px;
+}
+
 .pricing {
-    color: rgb(255, 228, 92);
+    padding: 25px;
+    color: rgb(255, 213, 0);
     transition: transform .2s ease;
 }
 
 .pricing:hover {
     font-size: 16px;
-    color: rgb(255, 213, 0);
+    color: rgb(255, 228, 92);
 }
 
+.product-description {
+
+}

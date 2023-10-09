@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Direct Events</title>
+    <title>Services - Direct Events</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -21,33 +21,7 @@
             </ul>
         </nav>
     </header>
-    
-    <section class="hero">
-        <section class="hero-text">
-            <h2>Welcome to our Chair Rental Services</h2>
-            <p>Find the perfect chairs for your event or occasion.</p>
-            <a href="#" class="btn">View Chairs</a>
-        </section>
 
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-                <img src="event1.jpg" alt="event one" class="slide-image">
-            </div>
-            <div class="mySlides fade">
-                <img src="event2.jpg" alt="event two" class="slide-image">
-            </div>
-            <div class="mySlides fade">
-                <img src="event3.jpg" alt="event three" class="slide-image">
-            </div>
-            <div class="mySlides fade">
-                <img src="event4.jpg" alt="event four" class="slide-image">
-            </div>
-            <div class="mySlides fade">
-                <img src="event5.jpg" alt="event five" class="slide-image">
-            </div>
-        </div>
-    </section>
-    
     <section class="chair-list">
         <h2>Our Chairs</h2>
         <div class="chair">
@@ -80,29 +54,6 @@
     </footer>
 
     <script>
-        let slideIndex = 0;
-        showSlides();
-    
-        function showSlides() {
-            const slides = document.querySelectorAll('.mySlides');
-
-            // hides all slides
-            for (let i = 0; i < slides.length; i++){
-                slides[i].classList.remove('dae-in');
-            }
-
-            // increment the slide index and wrap it around if needed
-            slideIndex++;
-            if(slideIndex > slides.length) {
-                slideIndex = 1;
-            }
-
-            // Display the current slide
-            slides[slideIndex - 1].classList.add('fade-in');
-
-            // Change slide every 3 seconds (3000 milliseconds)
-            setTimeout(showSlides, 500);
-        }
     </script>
 </body>
 </html>
